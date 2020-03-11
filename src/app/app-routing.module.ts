@@ -1,33 +1,33 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './login/login.component';
 
 const routes: Routes = [
-
-  
   { path: '', redirectTo: 'login', pathMatch: 'full' },
-//  { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
+  { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},
   {
     path: 'login',
-    loadChildren: './login/login.module#LoginPageModule'
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
   },
   {
     path: 'lista',
-   // loadChildren: () => import('./lista/lista.module').then( m => m.ListaPageModule)
-   loadChildren: './lista/lista.module#ListaPageModule'
-  },
-  {
-    path: 'usuario',
-    loadChildren: './usuario/usuario.module#UsuarioPageModule'
-  },
-  {
-    path: 'administrador',
-    loadChildren: () => import('./administrador/administrador.module').then( m => m.AdministradorPageModule)
+    loadChildren: () => import('./pages/lista/lista.module').then( m => m.ListaPageModule)
   },
   {
     path: 'nuevalista',
-    loadChildren: () => import('./nuevalista/nuevalista.module').then( m => m.NuevalistaPageModule)
-  }
+    loadChildren: () => import('./pages/nuevalista/nuevalista.module').then( m => m.NuevalistaPageModule)
+  },
+  {
+    path: 'usuario',
+    loadChildren: () => import('./pages/usuario/usuario.module').then( m => m.UsuarioPageModule)
+  },
+  {
+    path: 'administrador',
+    loadChildren: () => import('./pages/administrador/administrador.module').then( m => m.AdministradorPageModule)
+  },
+  {
+    path: 'registro',
+    loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
+  },
 ];
 
 @NgModule({
