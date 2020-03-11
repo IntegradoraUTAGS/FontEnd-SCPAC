@@ -1,18 +1,18 @@
 ion-content {
     --offset-top: 0px;
     --offset-bottom: 0px;
-    --background: rgb(25, 29, 36);
-    --color: #FFF;
+    --background: #e6e6e6;
+    --color: rgb(8, 8, 8);
     ion-card{
         --offset-top: 0px;
         --offset-bottom: 0px;
-        --background: #242A34;
-        --color: #FFF;
+        --background: #b4b4b4;
+        --color: rgb(7, 7, 7);
     }
     .login-box-centered {
         transform: translateY(-50%);
         top: 40%;
-        height: 50%;
+        height: 75%;
         left: 2.5%;
         right: 2.5%;
         position: absolute;
@@ -37,7 +37,7 @@ ion-content {
                 }
             }
             h3 {
-                color: #06bebd;
+                color: #000000;
             }
         }
         .body {
@@ -51,14 +51,14 @@ ion-content {
                     --border-color: transparent!important;
                     --highlight-height: 0;
                     --background: none;
-                    background: rgba(255,255,255,0.1);
+                    background: rgba(70, 67, 67, 0.1);
                     border-radius: 4px;
                     margin-bottom: 10px;
                     ion-icon {
-                        color: #FAFAFA;
+                        color: #000000;
                     }
                     ion-input {
-                        --color: #FFF;
+                        --color: #000000;
                     }
                 }
             }

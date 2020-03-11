@@ -1,0 +1,32 @@
+ion-content {
+    --offset-top: 0px;
+    --offset-bottom: 0px;
+    --background: #e6e6e6;
+    --color: rgb(8, 8, 8);
+    ion-item{
+        --offset-top: 0px;
+        --offset-bottom: 0px;
+        --background: #e6e6e6;
+    }
+    ion-card{
+        --offset-top: 0px;
+        --offset-bottom: 0px;
+        --background: #b4b4b4;
+        --color: rgb(7, 7, 7);
+    }
+    ion-label{
+        --color: #000000;
+        font-size:1.8rem;
+    }
+    .btn{
+        width: 67%;
+        margin-left: 10px;
+    }
+    .btn2{
+        width: 30%;
+        margin-left: 67%;
+    }
+    .margin{
+        margin:10px;
+    }
+}
