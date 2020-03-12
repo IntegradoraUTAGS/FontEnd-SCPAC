@@ -1,8 +1,10 @@
 <ion-header>
-   
   <ion-toolbar>
-    <ion-title>Administrador</ion-title>
-    <ion-icon slot="end"name="add-circle-outline" style="font-size: 45px;" [routerLink]="['/nuevalista']"></ion-icon>
+      <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>Administrador</ion-title>
+      <ion-icon slot="end"name="add-circle-outline" style="font-size: 45px;" [routerLink]="['/nuevalista']"></ion-icon>
   </ion-toolbar>
 </ion-header>
 
@@ -24,7 +26,7 @@
   </ion-card-header>
 
   <ion-card-content>
-    Descripción de la Lista
+    Descripción de la Lista!
   </ion-card-content>
 </ion-card>
 
@@ -39,4 +41,3 @@
 </ion-card>
 
 </ion-content>
-
